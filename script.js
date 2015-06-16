@@ -2,7 +2,7 @@ function domobj(){
   var self        =this;
   self.products   = []; 
 
-  self.getproducts = function(url){ //1. gets data from json: for loop 1
+  self.getproducts = function(url){
     $.getJSON(url, function(response){
         for(i=0; i<response.sales.length ; i++){
 		  self.products[i] = new productobj(response.sales[i], i); //removed push since it takes more time to execute
@@ -11,13 +11,13 @@ function domobj(){
     });
   }
     
-  self.updateproducthtml = function(){ //2. updates the html: for loop 2; This function is not used anymore to avoid another for loop
+  self.updateproducthtml = function(){ //this function is not used any more to avoid another for loop
     for( i=0; i< self.products.length ; i++){
       self.products[i].updatehtml();
     }
   }
   
-  self.updatedom = function(){ //4. updates the dom: for loop 3
+  self.updatedom = function(){
     var i=0
     thishtml='';
     for( i=0; i< self.products.length ; i++){
