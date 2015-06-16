@@ -8,3 +8,4 @@ Front End Challenge solution
 - I added a fadeout animation when any product is closed
 - I could make the screen and icons look prettier if I has used some other libraries and could have added the description div on top of the actual div as well
 - I did different class names for page and product title and tagline. This helped addressing the look and feel of the two differently.
+- Added an image gif which keep repeating till the page is loaded in the background
