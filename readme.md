@@ -5,7 +5,7 @@ Front End Challenge solution
 - Removed the notion of rows, since that helped in making the icons more fluid while:
 	1. removing any product from the screen by clicking on the 'x' (when there are no rows, the icons rearrange nicely)
 	2. making the page responsive (the icons don't need to be next to each other while using different devices)
-- I added a fadeout animation when any product is closed
+- I added a fadeout animation when any product is closed and then the rest of the icons rearrange themselves
 - I could make the screen and icons look prettier if I has used some other libraries and could have added the description div on top of the actual div as well
 - I did different class names for page and product title and tagline. This helped addressing the look and feel of the two differently.
 - Added an image gif which keep repeating till the page is loaded in the background
